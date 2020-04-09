@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Pagina Inicio OVI en formato WEB con HTML5 & CCS3</title>
@@ -9,9 +9,9 @@
 
 <body>
     <header class="fondoFijo">
-        <div class="container logo-nav">
+        <div class="logo-nav">
 
-            <img src="Imagen/ImagenUNAD.jpg" class="img-responsive" style="width:415px !important; height:124px !important" alt="">
+            <img src="Imagen/ImagenUNAD.jpg" class="img-responsive" style="width:415px !important; height:124px !important" alt="Logo de la UNAD">
         
             <hgroup>
                 <h1>Diseño de Sitios WEB - GIT/GITHUB, HTML5 y CSS3</h1>
@@ -28,47 +28,66 @@
                 <li><a href="Autores.html">AUTORES</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main class="main">
-        <div class="container">
-            <h1>Aqui va todo el contenido de la pagina</h1>
-            <h2>Te quiero a las diez de la mañana</h2>
-            <p>Te quiero a las diez de la mañana, y a las once,
-                y a las doce del día. Te quiero con toda mi alma y
-                con todo mi cuerpo, a veces, en las tardes de lluvia.
-                Pero a las dos de la tarde, o a las tres, cuando me
-                pongo a pensar en nosotros dos, y tú piensas en la
-                comida o en el trabajo diario, o en las diversiones
-                que no tienes, me pongo a odiarte sordamente, con
-                la mitad del odio que guardo para mí.</p>
-            <p>Luego vuelvo a quererte, cuando nos acostamos y
-                siento que estás hecha para mí, que de algún modo
-                me lo dicen tu rodilla y tu vientre, que mis manos
-                me convencen de ello, y que no hay otro lugar en
-                donde yo me venga, a donde yo vaya, mejor que tu
-                cuerpo. Tu vienes toda entera a mi encuentro, y
-                los dos desaparecemos un instante, nos metemos
-                en la boca de Dios, hasta que yo te digo que tengo
-                hambre o sueño.</p>
-            <p>Todos los días te quiero y te odio irremediablemente.
-                Y hay días también, hay horas, en que no
-                te conozco, en que me eres ajena como la mujer
-                de otro, Me preocupan los hombres, me preocupo
-                yo, me distraen mis penas. Es probable que no piense
-                en ti durante mucho tiempo. Ya ves ¿Quién
-                podría quererte menos que yo amor mío?</p>
-            
-            <section>
-                <article>Aqui va la sección de la pagina de INICIO</article>
-                <aside>Aqui va lo correspondiente al ASIDE dentro de SECTION</aside>        
-            </section>
-        
-            <article>Esto esta por fuera de la etiqueta SECTION</article>
-            <aside>Este ASIDE se encuentra fuera de la etiqueta SECTION</aside>  
-        </div>      
-    </main>
+    <section class="contenedorSection">
+        <section class="central">
+            <article>
+                <h3>Articulo No. 1 "Que es HTML"</h3>
+                    <p>
+                        La mayoría de las aplicaciones de escritorio que pueden leer y escribir ficheros 
+                        utilizan un formato de fichero especial. Por ejemplo, Microsoft Word entiende los 
+                        ficheros .doc y Microsoft Excel entiende los .xls. Estos ficheros contienen las 
+                        instrucciones para reconstruir el documento cuando se vuelve a abrir y para saber 
+                        cuál es su contenido, además de los "metadatos" sobre el artículo, como por ejemplo 
+                        el autor, la fecha de la última modificación del documento e incluso cosas como la 
+                        lista de cambios realizados con el fin de poder recuperar todas sus diferentes versiones
+                    </p>
+            </article>
+            <article>
+                <h3>Articulo No. 2 "Aspectos de HTML"</h3>
+                    <p> El HTML es sólo una representación textual del contenido y de su significado general.
+                        Por ejemplo, el código para el encabezamiento "Aspecto del HTML" es el siguiente:</p>
 
+                    <p> "h2 id="htmllooks">Aspecto del HTML /h2"</p>
+
+                    <p> La parte h2 es un marcador (que se conoce como "etiqueta") que significa "lo que sigue 
+                        se debe considerar como un título de segundo nivel". </h2> es una etiqueta que indica 
+                        dónde acaba el título de segundo nivel (y se conoce como "etiqueta de cierre"). 
+                        La etiqueta de apertura, la etiqueta de cierre y todo lo que hay entre ellas se conoce 
+                        como "elemento". Mucha gente utiliza los términos elemento y etiqueta indistintamente, 
+                        lo cual no es del todo correcto. id="htmllooks" es un atributo; ya hablaremos de los 
+                        atributos más adelante.</p>
+            </article>
+            <article>
+                <h3>Articulo No. 3 "La historia del HTML"</h3>
+                    <p> El HTML ha cambiado de una manera muy importante desde aquellos primeros días, pero 
+                        una buena parte del contenido del HTML actual ya se encontraba en esta primera documentación 
+                        y más de la mitad de las "etiquetas" descritas en el documento "Etiquetas HTML" original 
+                        todavía existen.</p>
+
+                    <p> A medida que fue habiendo cada vez más gente que escribía páginas web y alternativas al 
+                        navegador original, también se fueron añadiendo más funciones a HTML. Muchas se adoptaron 
+                        universalmente (como el elemento img utilizado para insertar una imagen en un documento, que 
+                        se utilizó por primera vez en NCSA Mosaic). Otras etiquetas eran propias y sólo se utilizaban 
+                        en uno o dos navegadores. Cada vez había una necesidad mayor de estandarización a fin de que 
+                        los autores de otros navegadores pudieran tener un documento (conocido como "especificación") 
+                        que describiera de manera definitiva el aspecto de HTML para así poder juzgar si se saltaban 
+                        algunas partes de la implantación de HTML.</p>
+            </article>
+        </section>
+        
+        <aside>
+            <h4>ESTA ES LA SECCION DE LA ETIQUETA ASIDE</h4>
+            <p>
+                Este ASIDE se encuentra fuera de la etiqueta SECTION Central, predo dentro de la etiqueta SECTION contenedora
+            </p>
+        </aside>
+    </section>  
+
+    <footer>
+        <p>Bogotá - Universidad Nacional Abierta y a Distancia</p>
+            <h6>By 301122 Grupo 10 Abril 2020</h6>
+    </footer>
 </body>
 </html>

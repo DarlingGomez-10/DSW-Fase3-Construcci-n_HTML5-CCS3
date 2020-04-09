@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Pagina Inicio OVI en formato WEB con HTML5 & CCS3</title>
@@ -9,9 +9,9 @@
 
 <body>
     <header class="fondoFijo">
-        <div class="container logo-nav">
+        <div class="logo-nav">
 
-            <img src="Imagen/ImagenUNAD.jpg" class="img-responsive" style="width:415px !important; height:124px !important" alt="">
+            <img src="Imagen/ImagenUNAD.jpg" class="img-responsive" style="width:415px !important; height:124px !important" alt="Logo de la UNAD">
         
             <hgroup>
                 <h1>Diseño de Sitios WEB - GIT/GITHUB, HTML5 y CSS3</h1>
@@ -28,11 +28,10 @@
                 <li><a href="Autores.html">AUTORES</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main class="main">
-        <div class="container">
+    <section class="contenedorSection">
+        <section class="central">
             <h1>Aqui va todo el contenido de los AUTORES</h1>
             <h2>Autor 1</h2>
             <h2>Autor 2</h2>
@@ -45,8 +44,19 @@
                 comida o en el trabajo diario, o en las diversiones
                 que no tienes, me pongo a odiarte sordamente, con
                 la mitad del odio que guardo para mí.</p>
-        </div>      
-    </main>
+        </section>
+        
+        <aside>
+            <h4>ESTA ES LA SECCION DE LA ETIQUETA ASIDE</h4>
+            <p>
+                Este ASIDE se encuentra fuera de la etiqueta SECTION Central, predo dentro de la etiqueta SECTION contenedora
+            </p>
+        </aside>
+    </section>  
 
+    <footer>
+        <p>Bogotá - Universidad Nacional Abierta y a Distancia</p>
+            <h6>By 301122 Grupo 10 Abril 2020</h6>
+    </footer>
 </body>
 </html>
