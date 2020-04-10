@@ -32,23 +32,25 @@ h2{
 
 .navegacion ul {
     margin: 0;
-    padding: 0;
+    padding: 2px 0;
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 .navegacion ul li{
-    display: inline-block;
+    flex-grow: 1;
     border-right: solid #005883;
 }
 
 .navegacion ul li a{
-    display: inline-block;
+    display: block;
     padding: 10px 15px;
-    background-color: #f0f8ff;
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
     transition: all 0.3s linear;
     border-radius: 4px;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -57,18 +59,52 @@ h2{
 }
 
 .contenedorSection{
+    display: inline-block;
     background-color: lightblue;
-    padding-top: 11.8rem;
+    padding-top: 12rem;
+    padding-left: 2px;
 }
 
 .central{
     background-color: lightsalmon;
     display: inline-block;
-    max-width: 66%;
+    max-width: 76.5%;
 }
 
 aside{
-    background-color: limegreen;
-    display: inline-block;
-    max-width: 33.5%;
+    float: right;
+    padding-right: 3px;
+    display: inline-table;
+    max-width: 30%;
+}
+/* Estilo para menu */
+li a, boton{
+    display: block;
+}
+
+.listDesplega{
+    display: none;
+    position: absolute;
+}
+
+.listDesplega a{
+    display: block;
+    text-align: left;
+}
+
+.boton:hover .listDesplega{
+    display: block;
+}
+
+.boton .listDesplega a{
+    background-color: #333;
+    color: white;
+    font-weight: 200;
+}
+
+.boton .listDesplega a:hover {
+    background-color: red;
+    color: white;
+    font-weight: 200;
+    width: 100%;
 }
