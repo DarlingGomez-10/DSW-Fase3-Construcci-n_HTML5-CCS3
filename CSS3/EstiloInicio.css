@@ -109,9 +109,32 @@ aside{
     padding-right: 3px;
     display: inline-table;
 }
-/*Diseño para el cuerpo de la pagina de lecturas*/
-.cuerpoLec{
+/*Se realiza el diseño para el cuerpo de la pagina LecturasHTML*/
+.centralLec{
     background-color: #f0ffff;
     display: inline-block;
-    max-width: 76.5%;
+    max-width: auto;
+}
+
+.LecTitle{
+    font-family: fantasy;
+    font-size: 3em;
+}
+
+.listDesplegaLec a{
+    display: block;
+    background-color: darkgray;
+    padding: 10px 15px;
+    width: 250px;
+}
+
+.primerparrafo{
+    display: flex;
+    justify-content: stretch;
+    padding: 30px 0;
+}
+
+.parrafo1Lec{
+    background-color: darkred;
+    width: 70%;
 }
