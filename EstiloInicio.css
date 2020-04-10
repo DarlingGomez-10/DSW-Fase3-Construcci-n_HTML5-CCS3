@@ -66,14 +66,14 @@ h2{
 }
 
 .central{
-    background-color: lightsalmon;
+    background-color: #f0ffff;
     display: inline-block;
     max-width: 76.5%;
 }
 
 aside{
     float: right;
-    padding-right: 3px;
+    padding-right: 3    px;
     display: inline-table;
     max-width: 30%;
 }
@@ -103,8 +103,8 @@ li a, boton{
 }
 
 .boton .listDesplega a:hover {
-    background-color: red;
-    color: white;
+    background-color: #dcdcdc;
+    color: #483d8b;
     font-weight: 200;
     width: 100%;
 }
