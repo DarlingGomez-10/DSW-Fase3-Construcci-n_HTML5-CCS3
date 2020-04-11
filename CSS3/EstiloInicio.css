@@ -63,6 +63,13 @@ body .footer{
     bottom: 0;
     text-align: center;
 }
+
+body .visitas{
+    bottom: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
 /* Estilo para menus desplegables*/
 li a, boton{
     display: block;
