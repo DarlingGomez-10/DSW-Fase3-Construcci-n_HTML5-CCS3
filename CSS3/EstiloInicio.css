@@ -58,6 +58,11 @@ h2{
 .navegacion ul li a:hover {
     background: darkcyan;
 }
+
+body .footer{
+    bottom: 0;
+    text-align: center;
+}
 /* Estilo para menus desplegables*/
 li a, boton{
     display: block;
@@ -137,4 +142,15 @@ aside{
 .parrafo1Lec{
     background-color: darkred;
     width: 70%;
+}
+
+.PieLectura{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+img{
+    display: block;
+    margin: auto;
 }

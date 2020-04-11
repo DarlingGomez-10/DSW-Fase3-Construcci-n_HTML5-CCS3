@@ -27,7 +27,7 @@
                         <a href="../HTML5/Lectura1.html">Iniciando en HTML5</a>
                         <a href="../HTML5/Lectura2.html">Etiquetas en HTML5</a>
                         <a href="../HTML5/Lectura3.html">Atributos en HTML5</a>
-                        <a href="Lectura4.html">Valores en HTML5</a>
+                        <a href="Lectura4.html">Estructura básica de HTML5</a>
                         <a href="../HTML5/Lectura5.html">Iniciando en CSS3</a>
                     </div>
                 </li>
@@ -55,25 +55,75 @@
     </header>
         
     <section class="contenedorSection">
-        <h2 class="LecTitle">Iniciando en HTML5</h2>
+        <h2 class="LecTitle">Estructura del documento HTML</h2>
         <section class="centralLec">
-            <h1>Aqui va todo el contenido de las LECTURAS sobre Valore en HTML5</h1>
 
-            <p>Te quiero a las diez de la mañana, y a las once,
-                y a las doce del día. Te quiero con toda mi alma y
-                con todo mi cuerpo, a veces, en las tardes de lluvia.
-                Pero a las dos de la tarde, o a las tres, cuando me
-                pongo a pensar en nosotros dos, y tú piensas en la
-                comida o en el trabajo diario, o en las diversiones
-                que no tienes, me pongo a odiarte sordamente, con
-                la mitad del odio que guardo para mí.</p>
+            <p>
+                Un documento HTML debe tener siempre una estructura inicial, con algunas etiquetas y 
+                características obligatorias y otras recomendables. Ese esquema es el siguiente, donde se 
+                diferencian tres zonas principales:
+
+                <li>Tipo de documento: En la primera línea del documento HTML debe ir especificado siempre de que tipo de documento HTML se trata. No es absolutamente obligatorio indicarlo (de hecho, hay páginas webs que no lo tienen), pero eso trae algunas consecuencias que veremos más adelante.</li>
+                <li>Head: En el documento HTML hay una primera sección donde se especificarán todos los metadatos del documento, es decir, la parte «que no se ve» directamente en el navegador de forma visual.</li>
+                <li>Body: La segunda sección es el cuerpo de la página, donde si aparecen todos los elementos que aparecerán visualmente en el navegador del usuario.</li>
+                
+                Las dos últimas secciones deben estar dentro de la etiqueta <html>, que es la que debe contener 
+                cualquier tipo de etiqueta HTML (salvo el tipo de documento, que debe especificarse antes):
+            </p>
+            <img src="../Imagen/Estructura01.JPG" class="img-responsive" alt="Imagen de HTML5">
+            <h3>Tipo de documento</h3>
+            <p>
+                Antes de comenzar un documento HTML, en su primera línea, es siempre conveniente indicar el tipo 
+                de documento a utilizar. Para indicar que se trata de un documento HTML5 colocaremos la siguiente 
+                linea:
+            </p>
+            <img src="../Imagen/Estructura02.JPG" class="img-responsive" alt="Imagen de HTML5">
+            <p>
+                En versiones anteriores, como HTML4 o XHTML, el tipo de documento se especificaba en la primera línea de la siguiente forma (más compleja):
+            </p>
+            <img src="../Imagen/Estructura03.JPG" class="img-responsive" alt="Imagen de HTML5">
+            <p>
+                Los navegadores, antes de comenzar a dibujar una página web, lo primero que hacen es leer la 
+                línea donde se indica el tipo de documento del que se trata. De esta forma, el navegador ya 
+                está preparado para actuar adaptándose perfectamente a cada tipo de documento.
+            </p>
+            <p>
+                En el caso de no indicar el tipo de documento en una página HTML, el navegador entra en lo que 
+                se llama Quirk mode (modo peculiar o modo no estándar), donde se activa un modo de 
+                retrocompatibilidad con páginas antiguas, que procesará de forma diferente muchas etiquetas 
+                HTML o propiedades CSS.
+            </p>
+            <h3>Cabecera HTML</h3>
+            <p>
+                La zona de la cabecera de una página web es la parte que se incluye en el interior de las 
+                etiquetas < head >, que son las primeras etiquetas que se encuentran en el documento y a su 
+                vez están dentro de las etiquetas < html > que engloban todo el documento HTML.
+            </p>
+            <p>
+                En esta zona se indicarán, en su mayoría, metadatos como el título y descripción de la página 
+                o elementos relacionados que no se representarán visualmente en el navegador del usuario. 
+                También es el lugar indicado para incluir etiquetas que relacionen el documento actual con 
+                otros documentos externos (por ejemplo, para cargar estilos CSS o scripts).
+            </p>
+            <h3>Cuerpo de página</h3>
+            <p>
+                La zona del cuerpo de página es la parte que se incluye en el interior de las etiquetas < body >, 
+                    la segunda parte de un documento HTML, que va inmediatamente después del cierre de la etiqueta 
+                    < head >. En esta zona se incluyen todas las etiquetas HTML que si tienen repercusión visual 
+                    en el navegador del usuario, generalmente utilizadas para dibujar secciones o partes de una 
+                    página.
+            </p>
+
+
         </section>
-        
+        <footer class="PieLectura"><h6>Manza. 2018. Atributos comunes en HTML. LENGUAJE HTML5:. Recuperado de https://lenguajehtml.com/p/html/introduccion/atributos-comunes-html</h6></footer>
     </section>  
 
-    <footer>
-        <p>Bogotá - Universidad Nacional Abierta y a Distancia</p>
-            <h6>By 301122 Grupo 10 Abril 2020</h6>
-    </footer>
+    <div class="footer">
+        <footer>
+            <h5>Bogotá - Universidad Nacional Abierta y a Distancia</5>
+                <h6>By 301122 Grupo 10 Abril 2020</h6>
+        </footer>
+    </div>
 </body>
 </html>
