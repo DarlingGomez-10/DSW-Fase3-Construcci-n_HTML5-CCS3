@@ -1,0 +1,188 @@
+/*Se diseña estilo para la cabecera fija*/
+body{
+    line-height: 1.6em;
+    background: #005883;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 2.4rem;
+    line-height: 1.0em;
+}
+h2{
+    font-size: 1.6rem;
+    line-height: 0.5em;
+}
+
+.fondoFijo{
+    margin: 1px;
+    background: #005883;
+    padding: 0.5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 2px 0;
+    list-style: none;
+    display: flex;
+}
+
+.navegacion ul li{
+    flex-grow: 1;
+    border-right: solid #005883;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: 10px 15px;
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover {
+    background: darkcyan;
+}
+
+body .footer{
+    bottom: 0;
+    text-align: center;
+}
+/* Estilo para menus desplegables*/
+li a, boton{
+    display: block;
+}
+
+.listDesplega{
+    display: none;
+    position: absolute;
+}
+
+.listDesplega a{
+    display: block;
+    text-align: left;
+}
+
+.boton:hover .listDesplega{
+    display: block;
+}
+
+.boton .listDesplega a{
+    background-color: #333;
+    color: white;
+    font-weight: 200;
+}
+
+.boton .listDesplega a:hover {
+    background-color: #dcdcdc;
+    color: #483d8b;
+    font-weight: 200;
+    width: 100%;
+}
+/*Se realiza diseño para el cuerpo de la pagina*/
+.contenedorSection{
+    display: inline-block;
+    background-color: lightblue;
+    padding-top: 12rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.central{
+    background-color: #f0ffff;
+    display: inline-block;
+    max-width: 76.5%;
+}
+
+aside{
+    float: right;
+    padding-right: 3px;
+    display: inline-table;
+    max-width: auto;
+}
+/*Se realiza el diseño para el cuerpo de la pagina LecturasHTML*/
+.centralLec{
+    background-color: #f0ffff;
+    display: inline-block;
+    max-width: auto;
+}
+
+.LecTitle{
+    font-family: fantasy;
+    font-size: 3em;
+}
+
+.listDesplegaLec a{
+    display: block;
+    background-color: darkgray;
+    padding: 10px 15px;
+    width: 250px;
+}
+
+.primerparrafo{
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.parrafo1Lec{
+    font-family: sans-serif;
+    line-height: 1.2em;
+    font-size: 2em;
+    background-color: aqua;
+    width: 70%;
+}
+
+.PieLectura{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+/*Se realiza el diseño para el cuerpo de la pagina de Autores*/
+.contenedorSectionAutores{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding-top: 12rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.centralAutores{
+    color: blue;
+    position: top;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 15px;
+}
+
+.centralAutor{
+    color: blue;
+    font-weight: 700;
+    position: top;
+    display: inline-block;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 15px;
+}
