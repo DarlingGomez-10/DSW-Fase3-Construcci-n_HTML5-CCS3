@@ -1,0 +1,25 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.subContenedor{
+    float: left;
+    max-width: 40vw;
+    max-height: 100vh;
+    padding: 20px;
+    text-align: justify;
+}
+
+.oLista{
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.liLista::before{
+    content: "\2022";
+    padding-right: 8px;
+    color: black;
+}
