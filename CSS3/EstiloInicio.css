@@ -113,6 +113,7 @@ aside{
     float: right;
     padding-right: 3px;
     display: inline-table;
+    max-width: auto;
 }
 /*Se realiza el diseño para el cuerpo de la pagina LecturasHTML*/
 .centralLec{
@@ -134,13 +135,16 @@ aside{
 }
 
 .primerparrafo{
-    display: flex;
-    justify-content: stretch;
+    display: inline-flex;
+    justify-content: space-around;
     padding: 30px 0;
 }
 
 .parrafo1Lec{
-    background-color: darkred;
+    font-family: sans-serif;
+    line-height: 1.2em;
+    font-size: 2em;
+    background-color: aqua;
     width: 70%;
 }
 
@@ -153,4 +157,32 @@ aside{
 img{
     display: block;
     margin: auto;
+}
+/*Se realiza el diseño para el cuerpo de la pagina de Autores*/
+.contenedorSectionAutores{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding-top: 12rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.centralAutores{
+    color: blue;
+    position: top;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 15px;
+}
+
+.centralAutor{
+    color: blue;
+    font-weight: 700;
+    position: top;
+    display: inline-block;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 15px;
 }
